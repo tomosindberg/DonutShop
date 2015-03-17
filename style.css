@@ -18,3 +18,16 @@ footer  {
   color: white
 }
 
+div p {
+
+}
+main > padding{
+
+}
+main > div > p{
+
+}
+div .foo{  //includes all .foo that are in a div
+
+}
+p:first-of-type  /* this is a comment */

@@ -1,0 +1,20 @@
+header {
+  text-family: "Times New Roman";
+  text-align: center;
+  background-color: #D2B48C;
+  margin: 5px auto 5px auto;
+  padding: 5px;
+  width: 60%;
+}
+body {
+  background-color: #F5DEB3;
+  background-image: donuts.jpg;
+}
+table  {
+  text-align: center;
+  background-color: #EEE8AA;
+}
+footer  {
+  color: white
+}
+

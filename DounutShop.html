@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Seattle Donut Shops</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="PerHourDay.js">
+</script>
+</head>
+<header>
+  <h1>Seattle Donut Shops<h1>
+  <h4>This program shows the number of donuts to bake per hour and per day.</h4>
+</header>
+
+<body>
+
+  <h5>Instruction:</h5>
+  <ol>
+    <li>Type in the location of the Donut Shop</li>
+    <li>Type in the time the Donut Shop closes</li>
+    <li>Enter the minimum number of customer each hour</li>
+    <li>Enter the maximum number of customers each hour</li>
+    <li>Enter the average amount of donuts a customer purchases</li>
+  </ol>
+  <p>
+    <label for="What Donut Shop?"> What Donut Shop?
+    </label>
+      <select name="Donut Shop" id="pickShop">
+        <option value="Downtown">Downtown</option>
+        <option value="Capitol Hill">Capitol Hill</option>
+        <option value="South Lake Union">South Lake Union</option>
+        <option value="Wedgewood">Wedgewood</option>
+        <option value="Ballard">Ballard</option>
+      </select>
+  </p>
+  <p>
+
+    <input type='button' onclick='callDowntown()' value = 'Downtown'/>
+<p id="downtown"></p>
+  </p>
+  <H3>Static information on all Donut Shops</H3>
+  <table border = "5">
+    <tr>
+      <th>Location</th>
+      <th>Opening Time</th>
+      <th>Closing Time</th>
+      <th>Minimum Customers Per Hour</th>
+      <th>Maximum Customers Per Hour</th>
+      <th>Donuts Per Customer</th>
+    </tr>
+    <tr>
+      <td>Downtown</td>
+      <td>7:00 AM</td>
+      <td>6:00 PM</td>
+      <td>8</td>
+      <td>43</td>
+      <td>4.50</td>
+    </tr>
+    <tr>
+      <td>Capitol Hill</td>
+      <td>7:00 AM</td>
+      <td>6:00 PM</td>
+      <td>4</td>
+      <td>37</td>
+      <td>2.00</td>
+    </tr>
+    <tr>
+      <td>South Lake Union</td>
+      <td>7:00 AM</td>
+      <td>6:00 PM</td>
+      <td>9</td>
+      <td>23</td>
+      <td>6.33</td>
+    </tr>
+    <tr>
+      <td>Wedgwood</td>
+      <td>7:00 AM</td>
+      <td>6:00 PM</td>
+      <td>2</td>
+      <td>28</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td>Ballard</td>
+      <td>7:00 AM</td>
+      <td>6:00 PM</td>
+      <td>8</td>
+      <td>58</td>
+      <td>3.75</td>
+    </tr>
+  </table>
+
+
+</body>
+<footer>
+  <p>&copy 2105 Tomo Sindberg</p>
+</footer>
+</html>

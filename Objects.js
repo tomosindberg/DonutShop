@@ -7,7 +7,7 @@ function Rectangle(height, width) {
       return this.height * this.width;
   };
 
-    this.calcPerimeter = function(){       // put our perimeter function here!
+    this.calcPerimeter = function(){
       return this.height * 2 + this.width * 2;
   }
 }

@@ -1,24 +1,78 @@
-header {
-  text-family: "Times New Roman";
+header  {
+  text-family: fantasy ;
   text-align: center;
-  background-color: #D2B48C;
-  margin: 5px auto 5px auto;
-  padding: 5px;
-  width: 60%;
+  background-color: rgba(125, 109, 165, 0.99);
+  /*margin:10px, auto, 20px, auto;*/
+  margin: 5px auto 20px auto;
+  padding: 10px;
+  width: 65%;
+  border-radius: 20px;
 }
-body {
-  background-color: #F5DEB3;
-  background-image: donuts.jpg;
+body  {
+  /*background-color: #F5DEB3;*/
+  background-image: url(/users/tomo/desktop/repos/donutShop/donuts.jpg);
+  /*background-size: cover;  cover zooms in and out with page size change*/
+  /*width: auto;
+  height: auto;*/
 }
-table  {
-  text-align: center;
-  background-color: #EEE8AA;
-}
-footer  {
-  color: white
+/*ol  {
+  font-size: px;
+}*/
+#menu{
+margin-bottom: 20px;
 }
 
-div p {
+button {
+  height: 50px;
+  width: 20%;
+  text-align: center;
+  /*display: inline-block;*/
+  border-radius: 40px;
+  font-size: 120%;
+  /*padding: 35px;*/
+  background-color: darkcyan;
+}
+#data   {
+  /*margin-right: 5%;*/
+  border: 5px #0BFFF;
+  padding: 10px;
+  display: flex;
+  align-items:center;
+  background-color:cornflowerblue;
+}
+td {
+  text-align: center;
+  background-color: #99CCFF;
+
+  margin:auto;
+ /* margin-bottom: 50px;*/
+  /*width: 60%;*/
+}
+#footer   {
+  /*position:absolute;*/
+  bottom: 0px;
+  color:white;
+  background: #999;
+  width: 20%;
+}
+
+
+/*table {
+  margin-bottom: 50px;
+}*/
+
+
+
+
+ /*float: left;
+  margin: 1em;
+  margin-left: 50px;
+  position: fixed;
+  right: 20px;
+  width: 50px;*/
+
+
+/*div p {
 
 }
 main > padding{

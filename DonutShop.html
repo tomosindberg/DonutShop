@@ -7,27 +7,16 @@
 <header>
   <h1>Seattle Donut Shops<h1>
   <h3>This program shows the number of donuts to bake per hour and per day.</h3>
+  <h3>Click on the Donut Location below to see how many donuts to bake each hour today.  </h3>
 </header>
 <body>
-  <h5>Instruction:</h5>
-<div id="instruction">
-  <ol>
-    <li>Type in the location of the Donut Shop</li>
-    <li>Type in the time the Donut Shop closes</li>
-    <li>Enter the minimum number of customer each hour</li>
-    <li>Enter the maximum number of customers each hour</li>
-    <li>Enter the average amount of donuts a customer purchases</li>
-  </ol>
-</div>
-  <div id="selection"></div>
-<H3>Static information on all Donut Shops</H3>
+  <div id="menu"></div> <!-- Place holder for Menu buttons -->
   <div id="data">
   <table border = "5">
     <tr>
       <th>Location</th>
       <th>Opening Time</th>
       <th>Closing Time</th>
-      <!-- <th>Customers Per Hour</th> -->
       <th>Bake at 7:00 AM</th>
       <th>Bake at 8:00 AM</th>
       <th>Bake at 9:00 AM</th>
@@ -39,18 +28,18 @@
       <th>Bake at 3:00 PM</th>
       <th>Bake at 4:00 PM</th>
       <th>Bake at 5:00 PM</th>
-    <!--   <th>Bake at 6:00 PM</th> closed at 6:00 -->
       <th>Donuts Per Day</th>
     </tr>
   </table>
+  <br>
 </div>
 <footer>
   <p id='footer'>&copy 2105 Tomo Sindberg</p>
 </footer>
+
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="PerHourDay.js"></script>
 <script src="main.js"></script>
-
 </body>
 
 </html>

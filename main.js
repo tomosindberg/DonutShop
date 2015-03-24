@@ -36,6 +36,7 @@ function showShop(shop) {
   $row.append(createCell(shop.approxCustomerHr()))
   $row.append(createCell(shop.approxCustomerHr()))
   $row.append(createCell(shop.approxCustomerHr()))
+  $row.append(createCell(shop.approxCustomerHr()))
   $row.append(createCell(shop.bakePerDay()))
   $table.append($row);
 }

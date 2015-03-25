@@ -6,9 +6,11 @@
 </head>
 <header>
   <h1>Seattle Donut Shops<h1>
-  <h3>This program shows the number of donuts to bake per hour and per day.</h3>
-  <h3>Click on the Donut Location below to see how many donuts to bake each hour today.  </h3>
-</header>
+  <h3>This page shows the number of donuts to bake per hour and per day.</h3>
+ </header>
+ <div id="instructions">
+  <h3>Click on the Location below to see how many donuts to bake each hour.</h3></div>
+
 <body>
   <div id="menu"></div> <!-- Place holder for Menu buttons -->
   <div id="data">
@@ -17,73 +19,76 @@
       <th>Location</th>
       <th>Opening Time</th>
       <th>Closing Time</th>
-      <th>Bake at 7:00 AM</th>
-      <th>Bake at 8:00 AM</th>
-      <th>Bake at 9:00 AM</th>
-      <th>Bake at 10:00 AM</th>
-      <th>Bake at 11:00 AM</th>
-      <th>Bake at 12:00 PM</th>
-      <th>Bake at 1:00 PM</th>
-      <th>Bake at 2:00 PM</th>
-      <th>Bake at 3:00 PM</th>
-      <th>Bake at 4:00 PM</th>
-      <th>Bake at 5:00 PM</th>
+      <th>Bake 1st hour</th>
+      <th>Bake 2nd hour</th>
+      <th>Bake 3rd hour</th>
+      <th>Bake 4th hour</th>
+      <th>Bake 5th hour</th>
+      <th>Bake 6th hour</th>
+      <th>Bake 7th hour</th>
+      <th>Bake 8th hour</th>
+      <th>Bake 9th hour</th>
+      <th>Bake 10th hour</th>
+      <th>Bake 11th hour</th>
       <th>Donuts Per Day</th>
     </tr>
   </table>
   <br>
 </div>
 <div id="updateData">
-<form action="http:..www.example.com/reviews.php" method="get">
+<form action="PerHourDay.js" method="post">
     <fieldset>
       <legend>
         Update Donut Shop information:
       </legend>
       <label>
         Location:
-         <select name="referrer" id="hear-about">
+         <select name="where" id="updateLocation">
           <option value="Downtown">Downtown</option>
-          <option value="friend">Capitol Hill</option>
-          <option value="advert">South Lake Union</option>
-          <option value="other">Wedgewood</option>
-          <option value="other">Ballard</option>
+          <option value="Capitol Hil">Capitol Hill</option>
+          <option value="South Lake Union">South Lake Union</option>
+          <option value="Wedgewood">Wedgewood</option>
+          <option value="Ballard">Ballard</option>
         </select>
       </label>
+      <br>
       <label>
         Opening Time:
-          <select name="referrer" id="hear-about">
-            <option value="Downtown">6:00 AM</option>
-            <option value="friend">7:00 AM</option>
-            <option value="advert">8:00 AM</option>
-            <option value="other">9:00 AM</option>
-            <option value="other">10:00 AM</option>
+          <select name="whenOpened" id="whenOpened">
+            <option value="6">6:00 AM</option>
+            <option value="7">7:00 AM</option>
+            <option value="8">8:00 AM</option>
+            <option value="9">9:00 AM</option>
+            <option value="10">10:00 AM</option>
           </select>
       </label>
       <label>
         Closing Time:
-          <select name="referrer" id="hear-about">
-            <option value="Downtown">4:00 PM</option>
-            <option value="friend">5:00 PM</option>
-            <option value="advert">6:00 PM</option>
-            <option value="other">7:00 PM</option>
-            <option value="other">8:00 PM</option>
+          <select name="whenClosed" id="whenClosed">
+            <option value="4">4:00 PM</option>
+            <option value="5">5:00 PM</option>
+            <option value="6">6:00 PM</option>
+            <option value="7">7:00 PM</option>
+            <option value="8">8:00 PM</option>
           </select>
       </label>
       <br>
       <label>
-        Average Minimum Customers per Hour:
-        <input type="password" name="password" size="2" maxlength="2" placeholder="password">
+        Average Customers per Hour:
+        <input id="customerMin" type="text" name="customerMin"  placeholder="Min" size="3">  Min
       </label>
+      <br>
       <label>
-        Average Maximum Customers per Hour:
-        <input type="number" name="password" size="2" maxlength="2"> <!-- placeholder="password"> -->
+        Average Customers per Hour:
+        <input id="customerMax" type="text" name="customerMax" placeholder="Max" size="3">  Max
       </label>
       <br>
       <label>
         Average Donuts Purchased per Customer:
-        <input type="password" name="password" size="4" maxlength="4" placeholder="password">
+        <input id="customerDonut" type="text" name="customerDonut"  maxlength="2" placeholder="1.00" size="4">
       </label>
       <br/>
+      <div id="submit"><input type="submit" onClick="getData()" value="Update Information"/></div>
     </fieldset>
 </div>
 <footer>
@@ -94,5 +99,4 @@
 <script type="text/javascript" src="PerHourDay.js"></script>
 <script src="main.js"></script>
 </body>
-
 </html>

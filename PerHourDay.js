@@ -9,7 +9,7 @@ function getDonutShops(){
   return [donutShop1,donutShop2,donutShop3, donutShop4, donutShop5];
 }
 //Constructor function to make DonutShops and add properties.
-function DonutShop (location, openingTime, closingTime, minCustomerHr, maxCustomerHr, donutsPerCustomer) {
+function DonutShop (location, openingTime, closingTime, minCustomerHr, maxCustomerHr, donutsPerCustomer, approxCustomerHr, bakePerDay) {
 
   this.location = location;
   this.openingTime = openingTime;
@@ -17,6 +17,8 @@ function DonutShop (location, openingTime, closingTime, minCustomerHr, maxCustom
   this.minCustomerHr = minCustomerHr;
   this.maxCustomerHr = maxCustomerHr;
   this.donutsPerCustomer = donutsPerCustomer;
+  this.approxCustomerHr = approxCustomerHr;
+  this.bakePerDay = bakePerDay;
 
   var hours = (this.closingTime - this.openingTime);
   var random =[];

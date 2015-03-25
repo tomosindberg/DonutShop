@@ -1,36 +1,41 @@
 header  {
-  text-family: fantasy ;
+  font-family:"Comic Sans MS";
   text-align: center;
   background-color: rgba(125, 109, 165, 0.99);
-  /*margin:10px, auto, 20px, auto;*/
   margin: 5px auto 20px auto;
   padding: 10px;
-  width: 65%;
+/*  width: 65%;*/
   border-radius: 20px;
 }
 body  {
-  /*background-color: #F5DEB3;*/
   background-image: url(/users/tomo/desktop/repos/donutShop/donuts.jpg);
-  /*background-size: cover;  cover zooms in and out with page size change*/
+  /*background-size: cover;  */
   /*width: auto;
   height: auto;*/
 }
-/*ol  {
-  font-size: px;
-}*/
 #menu{
 margin-bottom: 20px;
 }
-
+#instructions {
+  height: 60px;
+  width: 70%;
+  text-align: center;
+  margin: 5px auto 50px auto;
+  /*display: inline-block;*/
+  border-radius: 40px;
+  font-size: 120%;
+  padding: 5px;
+  background-color: darkcyan;
+  margin-bottom: 20px;
+}
 button {
   height: 50px;
   width: 20%;
   text-align: center;
-  /*display: inline-block;*/
   border-radius: 40px;
   font-size: 120%;
-  /*padding: 35px;*/
   background-color: darkcyan;
+  font-family: "impact";
 }
 #data   {
   /*margin-right: 5%;*/
@@ -39,27 +44,32 @@ button {
   display: flex;
   align-items:center;
   background-color:cornflowerblue;
-
 }
 td {
   text-align: center;
-  background-color: #99CCFF;
-
+  background-color: darkcyan;
   margin:auto;
   /*margin-bottom: 50px;*/
   /*width: 60%;*/
 }
 #updateData  {
+  /*text-align: center;*/
   background-color: #CC3300;
-  margin-top: 30px;
+  margin: 20px auto 0 auto;
+  font-size: 20px;
+  /*font-weight: bold;*/
+  padding: 5px;
+  width: 480px;
+}
+label {
 
 }
 #footer   {
-  /*position:absolute;*/
-  bottom: 0px;
+  margin-top:50px;
   color:white;
   background: #999;
-  width: 20%;
+  width: 153px;
+
 }
 
 

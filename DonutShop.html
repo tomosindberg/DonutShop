@@ -36,7 +36,7 @@
   <br>
 </div>
 <div id="updateData">
-<form action="PerHourDay.js" method="post">
+<form method="post">
     <fieldset>
       <legend>
         Update Donut Shop information:
@@ -54,7 +54,7 @@
       <br>
       <label>
         Opening Time:
-          <select name="whenOpened" id="whenOpened">
+          <select name="updateOpen" id="updateOpen" type="number" min="6" max="10">
             <option value="6">6:00 AM</option>
             <option value="7">7:00 AM</option>
             <option value="8">8:00 AM</option>
@@ -64,32 +64,35 @@
       </label>
       <label>
         Closing Time:
-          <select name="whenClosed" id="whenClosed">
-            <option value="4">4:00 PM</option>
-            <option value="5">5:00 PM</option>
-            <option value="6">6:00 PM</option>
-            <option value="7">7:00 PM</option>
-            <option value="8">8:00 PM</option>
+          <select name="updateClose" id="updateClose" type="number" min="16" max="20">
+            <option value="16">16:00 PM</option>
+            <option value="17">17:00 PM</option>
+            <option value="18">18:00 PM</option>
+            <option value="19">19:00 PM</option>
+            <option value="20">20:00 PM</option>
           </select>
       </label>
       <br>
       <label>
         Average Customers per Hour:
-        <input id="customerMin" type="text" name="customerMin"  placeholder="Min" size="3">  Min
+        <input id="updateCustMin" type="number" name="customerMin"  placeholder="0" size="3" min="0" max="99">  Min
       </label>
       <br>
       <label>
         Average Customers per Hour:
-        <input id="customerMax" type="text" name="customerMax" placeholder="Max" size="3">  Max
+        <input id="updateCustMax" type="number" name="customerMax" placeholder="0" size="3" min="0" max="99">  Max
       </label>
       <br>
       <label>
         Average Donuts Purchased per Customer:
-        <input id="customerDonut" type="text" name="customerDonut"  maxlength="2" placeholder="1.00" size="4">
+        <input id="updateDonut" type="number" name="customerDonut"  size="3" placeholder="1.00" step="any">
       </label>
       <br/>
-      <div id="submit"><input type="submit" onClick="getData()" value="Update Information"/></div>
+      <div id="submit"><input type="submit" value="Update Information"/></div>
+      </form>
     </fieldset>
+          <!-- onClick="getData()" -->
+
 </div>
 <footer>
   <p id='footer'>&copy 2105 Tomo Sindberg</p>

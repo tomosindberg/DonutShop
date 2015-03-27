@@ -7,7 +7,7 @@ var $footer =$('footer');
 shops.forEach(function(shop){   //creating location buttons//forEach is a method
   $('<button></button>')
     .text(shop.location)    //text this.location
-    .data(key, shop)
+    .data(key, shop)      //data(key, shop)  .data and key turn the shop into a string
     .click(function(){
       var $this = $(this);
       showShop($this.data(key));  //.this only effect the showShop function or object
@@ -36,13 +36,32 @@ function createCell(value){
   return $('<td></td>').text(value);
 }
 
+ var form = document.querySelector('form');
 
-function getData() {
-  $(document).ready(function() {
-    var updateLocation=$('#updateLocation').value;
-    alert("the value is:" + "test" );
-  });
-}
+form.addEventListener('submit',function(event)  {  //Update Donut Form
+    event.preventDefault()
+    var index =$("#updateLocation")[0].selectedIndex;
+    var shop=shops[index]
+     shop.openingTime=$("#updateOpen").val();
+     shop.closingTime=$("#updateClose").val();
+     shop.minCustomerHr=$("#updateCustMin").val();
+     shop.maxCustomerHr=$("#updateCustMax").val();
+     shop.donutsPerCustomer=$("#updateDonut").val();
+     console.log(shop.closingTime + shop.minCustomerHr + shop.maxCustomerHr+shop.donutsPerCustomer);
+ });
+
+  $footer.click(function() {
+    $(footer).css("background-color","blue");
+  });   //when i do $(this) it changes the rest of the line blue?
+
+//appendTo or append??
+
+      //this.submit();
+  //}
+
+  // function getData() {
+  //
+  // }
 
 // $('#updateData').submit(function() {
 //     // get all the inputs into an array.
@@ -56,12 +75,7 @@ function getData() {
 //     // });
 
 // });
-
-  $footer.click(function() {
-    $footer.fadeOut(700);//change to change font:black
-  });
-
-
+//fadeOut(700);
 // $(function() {
 //   $menu.hide().slideDown();
 //   // $button.hide().each(function(index){
@@ -77,12 +91,6 @@ function getData() {
 //     $(this).css('background-color','cornflowerblue');
 //   });
 // })
-
-
-
-
-
-
 
 // $(function() {
 

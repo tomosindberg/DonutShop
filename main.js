@@ -28,7 +28,17 @@ function showShop(shop) {
   $row.append(createCell(shop.closingTime + ':00'))
   for (i=0; i<hours; i++) {
     $row.append(createCell(shop.approxCustomerHr()))
-  }
+    };
+    // if (hours<11; hours++) {
+    //   $row.append(createCell(0))
+    // };
+
+  // function emptyCell(hours){   //testing to make empty cells 0
+  //   var empty = (11-hours);
+  //   for(empty>=0; empty--){
+  //   $row.append(createCell(0))
+  //   }
+  // }
   $row.append(createCell(shop.bakePerDay()))  //make 15th cell data location
   $table.append($row);
 }
@@ -42,11 +52,11 @@ form.addEventListener('submit',function(event)  {  //Update Donut Form
     event.preventDefault()
     var index =$("#updateLocation")[0].selectedIndex;
     var shop=shops[index]
-     shop.openingTime=$("#updateOpen").val();
-     shop.closingTime=$("#updateClose").val();
-     shop.minCustomerHr=$("#updateCustMin").val();
-     shop.maxCustomerHr=$("#updateCustMax").val();
-     shop.donutsPerCustomer=$("#updateDonut").val();
+     shop.openingTime=parseInt($("#updateOpen").val());
+     shop.closingTime=parseInt($("#updateClose").val());  //parseInt=returns integer
+     shop.minCustomerHr=parseInt($("#updateCustMin").val());
+     shop.maxCustomerHr=parseInt($("#updateCustMax").val());
+     shop.donutsPerCustomer=parseInt($("#updateDonut").val());
      console.log(shop.closingTime + shop.minCustomerHr + shop.maxCustomerHr+shop.donutsPerCustomer);
  });
 

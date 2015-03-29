@@ -32,15 +32,21 @@ function DonutShop (location, openingTime, closingTime, minCustomerHr, maxCustom
           allDay += random[i];
           return random[i];
       }
+      // if (i<=11 && i>=hours){  //insert 0 when not open
+      //random[i]=00;
+      //   i++;
+      //   return 0
+      // }
       allDay += random[i];
       return random[i]
     }
-    allDay= array_sum(random);
+    //allDay= array_sum(random);
+    //this.bakePerDay = allDay;
   }
   this.bakePerDay = function()   {
    return allDay;
   }
-
+  //allDay=0;
 }
 
 
